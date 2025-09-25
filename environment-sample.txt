@@ -1,0 +1,54 @@
+# E-Commerce Platform Environment Variables
+# Copy these environment variables to your system or create .env files
+
+# ===== DATABASE CONFIGURATION =====
+DB_URL=jdbc:mysql://localhost:3306/ecommerce_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+DB_USERNAME=ecommerce_user
+DB_PASSWORD=your_secure_password
+
+# ===== FIREBASE CONFIGURATION =====
+# Get these from Firebase Console -> Project Settings -> General -> Your apps
+FIREBASE_SERVICE_ACCOUNT_KEY={"type": "service_account", "project_id": "your-project-id", ...}
+
+# ===== STRIPE CONFIGURATION =====
+# Get these from Stripe Dashboard -> Developers -> API keys
+STRIPE_SECRET_KEY=sk_test_your_secret_key_here
+STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
+
+# ===== JWT CONFIGURATION =====
+JWT_SECRET=your-super-secure-jwt-secret-key-here
+JWT_EXPIRATION=86400000
+
+# ===== CORS CONFIGURATION =====
+CORS_ALLOWED_ORIGINS=http://localhost:3000,https://your-domain.com
+
+# ===== EMAIL CONFIGURATION (Optional) =====
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+
+# ===== APPLICATION CONFIGURATION =====
+PORT=8080
+SPRING_PROFILES_ACTIVE=dev
+
+# ===== FRONTEND ENVIRONMENT VARIABLES =====
+# Create these in frontend/.env.local
+
+# Firebase Configuration (from Firebase Console)
+# REACT_APP_FIREBASE_API_KEY=your_api_key
+# REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+# REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+# REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+# REACT_APP_FIREBASE_MESSAGING_SENDER_ID=123456789
+# REACT_APP_FIREBASE_APP_ID=1:123456789:web:abcdef
+# REACT_APP_FIREBASE_MEASUREMENT_ID=G-ABCDEF123
+
+# Backend API URL
+# REACT_APP_API_BASE_URL=http://localhost:8080/api
+
+# Stripe Publishable Key (same as above)
+# REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
+
+# Development Settings
+# REACT_APP_USE_FIREBASE_EMULATOR=false

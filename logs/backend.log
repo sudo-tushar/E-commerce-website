@@ -1,0 +1,2252 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.ecommerce:ecommerce-backend >-------------------
+[INFO] Building ecommerce-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ ecommerce-backend >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ecommerce-backend ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ ecommerce-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ecommerce-backend ---
+[INFO] skip non existing resourceDirectory /Users/tsinghal/Downloads/WebSite/backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ ecommerce-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ ecommerce-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ ecommerce-backend ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-09-25T21:06:29.553+05:30  INFO 90090 --- [  restartedMain] com.ecommerce.EcommerceApplication       : Starting EcommerceApplication using Java 17.0.16 with PID 90090 (/Users/tsinghal/Downloads/WebSite/backend/target/classes started by tsinghal in /Users/tsinghal/Downloads/WebSite/backend)
+2025-09-25T21:06:29.554+05:30 DEBUG 90090 --- [  restartedMain] com.ecommerce.EcommerceApplication       : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-09-25T21:06:29.554+05:30  INFO 90090 --- [  restartedMain] com.ecommerce.EcommerceApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T21:06:29.571+05:30  INFO 90090 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-25T21:06:29.571+05:30  INFO 90090 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-25T21:06:29.807+05:30  INFO 90090 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T21:06:29.838+05:30  INFO 90090 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
+2025-09-25T21:06:30.045+05:30  INFO 90090 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T21:06:30.049+05:30  INFO 90090 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T21:06:30.049+05:30  INFO 90090 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-09-25T21:06:30.066+05:30  INFO 90090 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-09-25T21:06:30.066+05:30  INFO 90090 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-09-25T21:06:30.121+05:30  INFO 90090 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T21:06:30.137+05:30  INFO 90090 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-09-25T21:06:30.148+05:30  INFO 90090 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T21:06:30.215+05:30  INFO 90090 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T21:06:30.227+05:30  INFO 90090 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-25T21:06:30.282+05:30  INFO 90090 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c490032
+2025-09-25T21:06:30.282+05:30  INFO 90090 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-25T21:06:30.301+05:30  WARN 90090 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-25T21:06:30.637+05:30  INFO 90090 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T21:06:30.738+05:30  INFO 90090 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T21:06:30.745+05:30  WARN 90090 --- [  restartedMain] com.ecommerce.config.FirebaseConfig      : Firebase service account key not provided. Firebase features will be disabled for demo.
+2025-09-25T21:06:30.745+05:30  WARN 90090 --- [  restartedMain] com.ecommerce.config.FirebaseConfig      : To enable Firebase, set FIREBASE_SERVICE_ACCOUNT_KEY environment variable
+2025-09-25T21:06:30.863+05:30  INFO 90090 --- [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-25T21:06:31.181+05:30  WARN 90090 --- [  restartedMain] com.ecommerce.service.PaymentService     : Stripe secret key not configured - payment processing will be simulated
+2025-09-25T21:06:31.181+05:30  WARN 90090 --- [  restartedMain] com.ecommerce.config.FirebaseConfig      : Firebase not initialized, returning null for FirebaseAuth bean
+2025-09-25T21:06:31.195+05:30  WARN 90090 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T21:06:31.202+05:30  WARN 90090 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 00cefee1-6708-4b4d-a8a6-223a4e5f71c5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-25T21:06:31.301+05:30  INFO 90090 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58ed1e17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bdc0e21, org.springframework.security.web.context.SecurityContextHolderFilter@56bb2c8d, org.springframework.security.web.header.HeaderWriterFilter@28aedc93, org.springframework.web.filter.CorsFilter@cdd2032, org.springframework.security.web.authentication.logout.LogoutFilter@256ddb3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49c1916e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fc9e85b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37b57cd1, org.springframework.security.web.session.SessionManagementFilter@3b80b7f, org.springframework.security.web.access.ExceptionTranslationFilter@7771c847, org.springframework.security.web.access.intercept.AuthorizationFilter@99d49f2]
+2025-09-25T21:06:31.376+05:30  WARN 90090 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-25T21:06:31.389+05:30  WARN 90090 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-25T21:06:31.390+05:30  INFO 90090 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for 2025-09-25T21:07:04.750+05:30  INFO 87558 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T21:07:04.750+05:30  INFO 87558 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T21:07:04.751+05:30  INFO 87558 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-25T21:07:04.753+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:07:04.756+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:07:04.756+05:30  WARN 87558 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/products' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-09-25T21:07:04.759+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:07:04.858+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-09-25T21:07:04.858+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:07:04.859+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /categories
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.is_active 
+    order by
+        c1_0.sort_order
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+2025-09-25T21:07:16.909+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-09-25T21:07:16.910+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:07:16.910+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /categories
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.is_active 
+    order by
+        c1_0.sort_order
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+2025-09-25T21:07:16.939+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products?size=1
+2025-09-25T21:07:16.939+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:07:16.939+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products?size=1
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        products p1_0 
+    where
+        p1_0.status=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:12:35.072+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:12:35.072+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:12:35.073+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:12:35.114+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-09-25T21:12:35.114+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:12:35.114+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /categories
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.is_active 
+    order by
+        c1_0.sort_order
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+2025-09-25T21:15:53.015+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:15:53.016+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:15:53.016+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:15:53.067+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-09-25T21:15:53.067+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:15:53.067+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /categories
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.is_active 
+    order by
+        c1_0.sort_order
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+Hibernate: 
+    select
+        c1_0.parent_id,
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.parent_id=?
+2025-09-25T21:15:53.105+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products/featured?limit=2
+2025-09-25T21:15:53.105+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:15:53.106+05:30 DEBUG 87558 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products/featured?limit=2
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status='ACTIVE' 
+        and p1_0.is_featured=1 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:20:39.099+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:20:39.100+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:20:39.100+05:30 DEBUG 87558 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:24:24.812+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:24:24.812+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:24:24.812+05:30 DEBUG 87558 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:24:59.898+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products
+2025-09-25T21:24:59.898+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:24:59.898+05:30 DEBUG 87558 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status=? 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T21:24:59.930+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/featured?limit=1
+2025-09-25T21:24:59.930+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-09-25T21:24:59.931+05:30 DEBUG 87558 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/featured?limit=1
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.average_rating,
+        p1_0.brand,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.detailed_description,
+        p1_0.dimensions,
+        p1_0.is_featured,
+        p1_0.name,
+        p1_0.price,
+        p1_0.review_count,
+        p1_0.sale_price,
+        p1_0.sku,
+        p1_0.slug,
+        p1_0.status,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        p1_0.weight 
+    from
+        products p1_0 
+    where
+        p1_0.status='ACTIVE' 
+        and p1_0.is_featured=1 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.description,
+        c1_0.image_url,
+        c1_0.is_active,
+        c1_0.name,
+        c1_0.parent_id,
+        c1_0.slug,
+        c1_0.sort_order,
+        c1_0.updated_at 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        iu1_0.product_id,
+        iu1_0.image_url 
+    from
+        product_images iu1_0 
+    where
+        iu1_0.product_id=?
+Hibernate: 
+    select
+        t1_0.product_id,
+        t1_0.tag 
+    from
+        product_tags t1_0 
+    where
+        t1_0.product_id=?
+2025-09-25T22:01:05.981+05:30  WARN 87558 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m15s334ms).
+2025-09-25T22:39:25.847+05:30  WARN 87558 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m49s843ms).
