@@ -17,7 +17,7 @@ import OrderDetail from './pages/OrderDetail';
 import Admin from './pages/Admin';
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
-// import './App.css'; // Temporarily disabled for PostCSS fix
+import './App.css';
 
 function App() {
   return (

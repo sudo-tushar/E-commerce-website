@@ -61,6 +61,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  // Check if Firebase is configured
+  const isFirebaseReady = !!auth;
+
   const registerUserInBackend = async (user: User, firstName: string, lastName: string, phone?: string) => {
     try {
       const response = await api.post('/users/register', {
@@ -78,8 +81,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const login = async (email: string, password: string) => {
+    if (!isFirebaseReady) {
+      toast.error('Authentication is not configured. Please set up Firebase.');
+      throw new Error('Firebase not configured');
+    }
+    
     try {
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(auth!, email, password);
       await fetchUserData(userCredential.user);
       toast.success('Successfully logged in!');
     } catch (error: any) {
@@ -89,8 +97,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signup = async (email: string, password: string, firstName: string, lastName: string, phone?: string) => {
+    if (!isFirebaseReady) {
+      toast.error('Authentication is not configured. Please set up Firebase.');
+      throw new Error('Firebase not configured');
+    }
+    
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await createUserWithEmailAndPassword(auth!, email, password);
       
       // Update Firebase profile
       await updateProfile(userCredential.user, {
@@ -108,9 +121,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const loginWithGoogle = async () => {
+    if (!isFirebaseReady) {
+      toast.error('Authentication is not configured. Please set up Firebase.');
+      throw new Error('Firebase not configured');
+    }
+    
     try {
       const provider = new GoogleAuthProvider();
-      const userCredential = await signInWithPopup(auth, provider);
+      const userCredential = await signInWithPopup(auth!, provider);
       const user = userCredential.user;
       
       const displayName = user.displayName || '';
@@ -132,8 +150,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const logout = async () => {
+    if (!isFirebaseReady) {
+      setCurrentUser(null);
+      setUserData(null);
+      toast.success('Logged out!');
+      return;
+    }
+    
     try {
-      await signOut(auth);
+      await signOut(auth!);
       setUserData(null);
       toast.success('Successfully logged out!');
     } catch (error: any) {
@@ -143,8 +168,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const resetPassword = async (email: string) => {
+    if (!isFirebaseReady) {
+      toast.error('Authentication is not configured. Please set up Firebase.');
+      throw new Error('Firebase not configured');
+    }
+    
     try {
-      await sendPasswordResetEmail(auth, email);
+      await sendPasswordResetEmail(auth!, email);
       toast.success('Password reset email sent!');
     } catch (error: any) {
       toast.error(error.message || 'Failed to send password reset email');
@@ -153,6 +183,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const updateUserProfile = async (firstName: string, lastName: string, phone?: string) => {
+    if (!isFirebaseReady) {
+      toast.error('Authentication is not configured. Please set up Firebase.');
+      throw new Error('Firebase not configured');
+    }
+    
     try {
       if (currentUser) {
         await updateProfile(currentUser, {
@@ -177,7 +212,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+    if (!isFirebaseReady) {
+      setLoading(false);
+      console.log('🔧 Firebase not configured - authentication disabled for demo');
+      return;
+    }
+    
+    const unsubscribe = onAuthStateChanged(auth!, async (user) => {
       setCurrentUser(user);
       if (user) {
         await fetchUserData(user);

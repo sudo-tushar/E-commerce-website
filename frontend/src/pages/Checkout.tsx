@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
-import { useAuth } from '../contexts/AuthContext';
+// import { useAuth } from '../contexts/AuthContext'; // Will be used when authentication is implemented
 import api from '../services/api';
 import { CreditCardIcon, TruckIcon } from '@heroicons/react/24/outline';
 
